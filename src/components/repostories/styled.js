@@ -16,7 +16,6 @@ export const WrapperTabList = styled(TabList)`
 WrapperTabList.tabsRole = 'TabList'
 
 export const WrapperTab = styled(Tab)`
-  
   border: 1px solid #ccc;
   padding: 8px;
   user-select: none;
@@ -38,3 +37,9 @@ export const WrapperTabPanel = styled(TabPanel)`
   }
 `
 WrapperTabPanel.tabsRole = 'TabPanel'
+
+export const WrapperList = styled.div`
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+`
