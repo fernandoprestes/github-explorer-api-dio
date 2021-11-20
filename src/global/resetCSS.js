@@ -17,6 +17,7 @@ export const ResetCSS = createGlobalStyle`
 
   body {
     margin: 0;
+    background: #1A1B24;
   }
 
   main {

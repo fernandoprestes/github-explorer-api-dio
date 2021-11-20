@@ -1,4 +1,5 @@
 import React from 'react'
+import { Footer } from './components/footer'
 import { Layout } from './components/layout'
 import { NoSearch } from './components/no-search'
 import { Profile } from './components/profile'
@@ -17,6 +18,7 @@ export const App = () => {
             <>
               <Profile />
               <Repositories />
+              <Footer />
             </>
           )}
         </>

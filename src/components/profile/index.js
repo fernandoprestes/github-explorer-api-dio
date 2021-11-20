@@ -23,25 +23,27 @@ export const Profile = () => {
               @{githubState.user.login}
             </a>
           </S.WrapperUserName>
-          <p>company</p>
-          <p>location</p>
-          <p>blog</p>
+          <p>Company: {githubState.user.company}</p>
+          <p>Location: {githubState.user.location}</p>
+          <p>
+            Blog <a href={githubState.user.blog}>{githubState.user.blog}</a>
+          </p>
         </div>
         <S.WrapperStatusCount>
           <div>
-            <h4>Followers: </h4>
+            <h4>Followers</h4>
             <span>{githubState.user.followers}</span>
           </div>
           <div>
-            <h4>Followings: </h4>
+            <h4>Followings</h4>
             <span>{githubState.user.following}</span>
           </div>
           <div>
-            <h4>Gists: </h4>
+            <h4>Gists</h4>
             <span>{githubState.user.public_gists}</span>
           </div>
           <div>
-            <h4>Repos: </h4>
+            <h4>Repos</h4>
             <span>{githubState.user.public_repos}</span>
           </div>
         </S.WrapperStatusCount>

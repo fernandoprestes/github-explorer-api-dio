@@ -7,22 +7,21 @@ export const Header = () => {
   const [usernameForSearch, setUsernameForSearch] = useState('')
 
   const handleSubmit = () => {
+    //se não for digitado usuario
     if (!usernameForSearch) return
     return getUser(usernameForSearch)
   }
 
   return (
-    <header>
-      <S.Wrapper>
-        <input
-          type="text"
-          placeholder="username"
-          onChange={event => setUsernameForSearch(event.target.value)}
-        />
-        <button type="submit" onClick={handleSubmit}>
-          Buscar
-        </button>
-      </S.Wrapper>
-    </header>
+    <S.Header>
+      <S.WrapperInput
+        type="text"
+        placeholder="username"
+        onChange={event => setUsernameForSearch(event.target.value)}
+      />
+      <S.WrapperButton type="submit" onClick={handleSubmit}>
+        Buscar
+      </S.WrapperButton>
+    </S.Header>
   )
 }
